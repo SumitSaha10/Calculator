@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+}
+body{
+    background: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 2px solid black;
+    margin: auto;
+}
+.container input{
+     
+     font-size: 1.8rem;
+     outline: none;
+     border: 2px solid cyan;
+     background: none;
+     color: rgb(57, 245, 245);
+    text-align: right;
+}
+table{
+    margin-top: 1rem;
+}
+.btns{
+    margin: 5px;
+    font-size: 1.5rem;
+    width: 70px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(13, 235, 235);
+    transition: all 0.5s;
+}
+.btns:hover{
+    background-color: rgb(17, 238, 17);
+    box-shadow: 0 0 20px rgb(17, 238, 17);
+}
+table tr td #equal{
+    position: absolute;
+    padding: 0 7.3rem;
+    margin-top: -0.8rem;
+}
+/*
+Applying Media Query
+*/
+
+@media(max-width:365px){
+    .container input{
+        font-size: 1.5rem;
+    }
+    .btns{
+        width: 60px;
+    } 
+    table tr td #equal{
+        padding: 0 6.4rem;
+        
+    }
+}
+
+@media(max-width:300px){
+    .container input{
+        font-size: 1.3rem;
+    }
+    .btns{
+       
+        width: 53px;
+    }  
+    table tr td #equal{
+        position: relative;
+        padding: 0px;
+        margin-top: 0px;
+    }
+}
