@@ -1,4 +1,4 @@
-/* Writing Logic for calculator */
+*  Writing Logic for calculator */
 window.addEventListener('load',function() {
       let box = document.getElementById('box');
       let storeNumber = '';
